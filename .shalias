@@ -1,0 +1,70 @@
+#!/bin/sh
+
+# python
+alias pypi="python setup.py register; python setup.py sdist upload"
+alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
+alias pm="python manage.py"
+
+alias ctags="`brew --prefix`/bin/ctags"
+
+alias monitor='~/android-sdk/tools/monitor'
+
+alias l='ls'
+alias ll='ls -l'
+alias ls="ls -G"
+alias p="pwd"
+
+alias q='exit'
+alias ipy="ipython"
+
+alias ser='python -m CGIHTTPServer'
+
+
+# Git
+alias ggpull='git pull origin $(current_branch)'
+alias gl='git pull'
+alias glc='git pull origin $(current_branch)'
+alias ggpush='git push origin $(current_branch)'
+alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
+alias gst="git status"
+alias gsp="git stash pop"
+alias gsa="git stash"
+alias git-conflict='git status | python ~/SkyDrive/repository/utility/git/git_conflict_open.py'
+alias git-untracked-delete='git status | python ~/SkyDrive/repository/utility/git/git_untracked_delete.py'
+
+# mac
+alias strace='dtruss'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+alias st2="open -a 'Sublime Text 2'"
+alias st3="open -a 'Sublime Text'"
+alias g="git"
+alias t="tig"
+
+# tmux
+alias tm="tmux -CC"
+alias mux=tmuxinator
+
+# java
+alias java8="${JAVA8_HOME}/bin/java"
+alias javac8="${JAVA8_HOME}/bin/javac"
+function javae8()
+{
+    javac8 $1
+    if [ $? -ne 0 ]; then
+        return
+    fi
+    java8 `echo $1 | sed -e s/\.java//`
+}
+
+
+# for android
+alias and-debug='./gradlew installDebug --daemon'
+alias and-test='./gradlew connectedCheck --daemon'
+alias and-release='./gradlew installRelease --daemon'
+alias and-deploygate='./gradlew assembleRelease --daemon; ./gradlew uploadDeployGateRelease --daemon'
+alias and-mem='adb shell dumpsys meminfo'

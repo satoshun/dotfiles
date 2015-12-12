@@ -2,6 +2,7 @@
 
 function update()
 {
+    mkdir -p ~/.codeintel
     rsync --exclude ".git" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -avh . ~;
 }
 

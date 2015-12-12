@@ -1,0 +1,108 @@
+[user]
+    name = SatoShun
+    email = shun.sato1@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+    editor = /usr/bin/vim
+    excludesfile = ~/.gitignore_global
+
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.9.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    grep = auto
+    ui = auto
+    interactive = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[push]
+    default = current
+[alias]
+    st = stash
+    co = checkout
+    ci = commit -v
+    di = diff
+    br = branch -v -v
+    puhs = push
+    psuh = push
+    pus = push
+    puh = push
+    pl = !git pull && git submodule update --init
+    plc = !git pull origin $current_branch
+    com = checkout master
+    both-added-head = !sh ~/SkyDrive/repository/git/both_added_head.sh
+    pp = git
+    cm = commit -m
+    delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+    amend = commit --amend -C HEAD
+    in = init --separate-git-dir
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+    ls = log --oneline --decorate
+    lh = log --graph
+    la = !git lh --date-order --all 2> /dev/null
+    lb = log --graph --simplify-by-decoration
+    lba = !git lb --all
+    h = !git --no-pager log --graph -n 15
+    a = !git --no-pager la -n 15
+    sp = stash pop
+    fix = commit --amend
+    current = rev-parse --abbrev-ref HEAD
+    branch-root = merge-base master HEAD
+    review = !tig --no-walk --reverse -w $(git branch-root)..HEAD
+    delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+    cmb = "!f () { git commit -m \"`git rev-parse --abbrev-ref HEAD` $1\" $2;}; f"
+[rerere]
+    enabled = true
+[branch]
+    autosetuprebase = always
+[commit]
+    cleanup = whitespace
+[mergetool "sublime"]
+    cmd = sub -w $MERGED
+    trustExitCode = false
+[merge]
+    tool = sublime
+    conflictstyle = diff3
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[github]
+    user = satoshun
+[diff "json"]
+    textconv = "jq -M ."
+[url "git@github.com:satoshun"]
+    insteadof = gh:
+[url "git@bitbucket.org:satoshun"]
+    insteadof = bit:
+[gui]
+    encoding = utf-8
+[grep]
+    lineNumbers = true
+[web]
+    browser = open
+[browser "chrome"]
+    cmd = open -a 'Google Chrome.app'
+[pull]
+    default = current

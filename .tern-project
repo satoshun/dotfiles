@@ -1,0 +1,19 @@
+{
+    "libs": [
+      "browser",
+      "jquery",
+      "ecma5",
+      "underscore"
+    ],
+    "plugins": {
+      "angular": {
+        "baseURL": "./"
+      },
+      "requirejs": {
+        "baseURL": "./"
+      },
+      "node": {
+        "baseURL": "./"
+      }
+    }
+}
