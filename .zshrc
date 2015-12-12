@@ -22,9 +22,3 @@ export JAVA8_HOME=`/usr/libexec/java_home -v "1.8"`
 if [ -f `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion ]; then
     source `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion
 fi
-
-
-if [ -f ~/bin/genymotion_peco.sh ]; then
-    export GENYMOTION_APP_HOME=/Applications/Genymotion.app/
-    source ~/bin/genymotion_peco.sh
-fi
