@@ -10,7 +10,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 . $HOME/.zshenv
 . $HOME/.shalias
 . $HOME/.shfunc
-. $HOME/.zaw
+. $HOME/.zawrc
 
 export LANG=en_US.UTF-8
 
