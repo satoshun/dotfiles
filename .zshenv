@@ -109,3 +109,7 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 export GOG_PATH=~/git
 export GOG_HOOK_CMD="cd {{.Directory}} && cd ../ && subpro create etc {{.ProjectName}}"
 export LCS_PATH=~/git
+
+
+## homebrew
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
