@@ -14,6 +14,7 @@ source `which virtualenvwrapper.sh`
 export pylint_path=/usr/local/bin
 export LDFLAGS=-L/usr/local/lib/
 export CFLAGS=-I/usr/local/include/
+export PATH=$PATH:~/anaconda3/bin
 
 ### ruby
 export GEM_HOME=$HOME/gems
