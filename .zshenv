@@ -90,7 +90,7 @@ EDITOR='Sublime Text'
 ### android
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
-PATH=$PATH:~/android-sdk/tools:~/android-sdk/platform-tools
+PATH=$PATH:~/android-sdk/tools:~/android-sdk/platform-tools:~/android-sdk/build-tools/24.0.0-preview
 
 
 ### mongodb
@@ -114,3 +114,5 @@ export LCS_PATH=~/git
 
 ## homebrew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# eval "$(docker-machine env default)"

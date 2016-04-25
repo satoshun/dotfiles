@@ -29,3 +29,8 @@ topcoder()
     subpro topcoder
     cd ~/Dropbox/coder; open ContestAppletProd.jnlp ; cd -;
 }
+
+function code ()
+{
+    VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args "$@";
+}
