@@ -88,7 +88,7 @@ EDITOR='Sublime Text'
 
 
 ### android
-export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export ANDROID_HOME="/Users/satouhayabusa/android-sdk"
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
 PATH=$PATH:~/android-sdk/tools:~/android-sdk/platform-tools:~/android-sdk/build-tools/24.0.0-preview
 
@@ -116,3 +116,6 @@ export LCS_PATH=~/git
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # eval "$(docker-machine env default)"
+
+source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
