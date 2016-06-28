@@ -74,4 +74,7 @@ set ADB_TRACE=all
 # for ssh
 alias sshi='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 
-brew-cask="brew cask --caskroom=/opt/homebrew-cask/Caskroom"
+function brew-cask()
+{
+    brew cask $1 --caskroom=/opt/homebrew-cask/Caskroom
+}

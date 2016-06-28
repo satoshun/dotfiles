@@ -8,7 +8,7 @@ brewupdate()
     brew upgrade --all
     brew cleanup
     # for c in `brew cask list`; do ! brew cask info $c | grep -qF "Not installed" || brew cask install $c; done
-    brew cask cleanup
+    brew-cask cleanup
 
     echo "Remove garbage of sublime text"
     cd "/Users/satouhayabusa/Library/Application Support/Sublime Text 3"
