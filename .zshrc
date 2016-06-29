@@ -7,7 +7,6 @@ fi
 . `brew --prefix`/etc/profile.d/z.sh
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-. $HOME/.zshenv
 . $HOME/.zawrc
 . $HOME/.shalias
 . $HOME/.shfunc
