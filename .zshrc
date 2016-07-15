@@ -10,12 +10,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 . $HOME/.zawrc
 . $HOME/.shalias
 . $HOME/.shfunc
+. $HOME/.bash_rc
 
 export LANG=en_US.UTF-8
-
-export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-export JAVA6_HOME=`/usr/libexec/java_home -v "1.6"`
-export JAVA8_HOME=`/usr/libexec/java_home -v "1.8"`
 
 
 if [ -f `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion ]; then
