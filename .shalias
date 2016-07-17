@@ -76,5 +76,5 @@ alias sshi='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 
 function brew-cask()
 {
-    brew cask $1 --caskroom=/opt/homebrew-cask/Caskroom
+    brew cask $1
 }
