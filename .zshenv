@@ -56,7 +56,7 @@ PATH=$HOME/.nodebrew/current/bin:$PATH
 
 ### ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
-PATH=~/git/my/etc/my_setting/vagrant/:$PATH
+PATH=~/git/my/etc/my_setting/vagrant:$PATH
 
 
 ### homebrew
