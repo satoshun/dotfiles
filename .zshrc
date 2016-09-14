@@ -18,3 +18,4 @@ export LANG=en_US.UTF-8
 if [ -f `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion ]; then
     source `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion
 fi
+. <(azure --completion)
