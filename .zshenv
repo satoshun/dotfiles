@@ -8,9 +8,9 @@ export PATH=$PATH:$HOME/.nodebrew/current/bin
 export PATH=$PATH:$HOME/.cabal/bin
 
 ### python
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source `which virtualenvwrapper.sh`
+#export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+#export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+#source `which virtualenvwrapper.sh`
 export pylint_path=/usr/local/bin
 export LDFLAGS=-L/usr/local/lib/
 export CFLAGS=-I/usr/local/include/
