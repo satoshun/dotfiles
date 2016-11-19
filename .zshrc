@@ -13,9 +13,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 . $HOME/.bash_rc
 
 export LANG=en_US.UTF-8
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+export HISTFILE=~/.zsh_history
 
 if [ -f `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion ]; then
     source `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion
