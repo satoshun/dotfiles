@@ -90,7 +90,7 @@ EDITOR='Sublime Text'
 ### android
 export ANDROID_HOME="/Users/satouhayabusa/android-sdk"
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
-PATH=$PATH:~/android-sdk/tools:~/android-sdk/platform-tools:~/android-sdk/build-tools/24.0.0-preview
+PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools
 
 
 ### mongodb
